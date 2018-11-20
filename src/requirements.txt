@@ -1,0 +1,4 @@
+Django==1.11.4
+Pillow==5.3.0
+pkg-resources==0.0.0
+pytz==2018.7

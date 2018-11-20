@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d303d0d-604d-42be-b6f6-0c929ea9c8da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ecommerce/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static_my_proj/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/auth/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/home_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/products/templates/products/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/products/templates/products/product_list_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ecommerce/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ecommerce/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ecommerce/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +22,10 @@
     <session id="-499119544">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -28,30 +33,32 @@
           <entry key="LICENSE" value="1" />
           <entry key="css" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="5" />
-          <entry key="py" value="6" />
+          <entry key="html" value="8" />
+          <entry key="jpeg" value="1" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="8" />
+          <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="6" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="19" />
-          <entry key="html" value="489" />
-          <entry key="py" value="2589" />
+          <entry key="html" value="652" />
+          <entry key="py" value="4517" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="19" />
-          <entry key="HTML" value="489" />
-          <entry key="Python" value="2589" />
+          <entry key="HTML" value="652" />
+          <entry key="Python" value="4517" />
         </counts>
       </usages-collector>
     </session>
@@ -59,62 +66,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ecommerce/views.py">
+        <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="172">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/products/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
-                <element signature="e#228#268#0" />
-                <element signature="e#374#607#0" />
-                <element signature="e#394#424#0" />
-                <element signature="e#509#599#0" />
-                <element signature="e#109#1393#0" />
-                <element signature="e#152#1388#0" />
-                <marker date="1542627972963" expanded="false" signature="545:550" ph="..." />
-                <marker date="1542627972963" expanded="false" signature="948:953" ph="..." />
-                <marker date="1542627972963" expanded="true" signature="2057:2118" ph="..." />
-                <marker date="1542627972963" expanded="false" signature="2145:2146" ph="..." />
+                <element signature="e#0#63#0" expanded="true" />
+                <marker date="1542723797626" expanded="true" signature="207:212" ph="..." />
+                <marker date="1542723797626" expanded="true" signature="535:540" ph="..." />
+                <marker date="1542723797626" expanded="true" signature="1636:1732" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/home_page.html">
+        <entry file="file://$PROJECT_DIR$/src/products/templates/products/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
+        <entry file="file://$PROJECT_DIR$/src/products/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="166">
+              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
-                <element signature="e#643#675#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1542723827516" expanded="true" signature="651:847" ph="..." />
+                <marker date="1542723827516" expanded="true" signature="690:847" ph="..." />
+                <marker date="1542723827516" expanded="true" signature="875:880" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ecommerce/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static_my_proj/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -143,15 +137,22 @@
         <option value="$PROJECT_DIR$/src/ecommerce/forms.py" />
         <option value="$PROJECT_DIR$/src/static_my_proj/css/main.css" />
         <option value="$PROJECT_DIR$/src/ecommerce/settings.py" />
+        <option value="$PROJECT_DIR$/src/products/admin.py" />
+        <option value="$PROJECT_DIR$/src/products/urls.py" />
+        <option value="$PROJECT_DIR$/src/products/templates/products/product_list_view.html" />
+        <option value="$PROJECT_DIR$/src/products/templates/products/list.html" />
         <option value="$PROJECT_DIR$/src/ecommerce/urls.py" />
+        <option value="$PROJECT_DIR$/src/products/templates/products/detail.html" />
+        <option value="$PROJECT_DIR$/src/products/views.py" />
+        <option value="$PROJECT_DIR$/src/products/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="336" />
-    <option name="y" value="24" />
-    <option name="width" value="823" />
-    <option name="height" value="671" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-42" />
+    <option name="y" value="-4" />
+    <option name="width" value="774" />
+    <option name="height" value="697" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -176,6 +177,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ecommerce_udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce_udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="static_cdn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce_udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="static_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="media_root" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce_udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="static_cdn" type="462c0819:PsiDirectoryNode" />
+              <item name="media_root" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -185,7 +204,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django-Ckeditor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -214,10 +233,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="336" y="24" width="823" height="671" extended-state="1" />
+    <frame x="696" y="36" width="774" height="669" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15179761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -230,12 +249,32 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.17495395" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20810314" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.09796673" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3423913" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.17495395" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37302977" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
@@ -264,26 +303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ecommerce/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#228#268#0" />
-            <element signature="e#374#607#0" />
-            <element signature="e#394#424#0" />
-            <element signature="e#509#599#0" />
-            <element signature="e#109#1393#0" />
-            <element signature="e#152#1388#0" />
-            <marker date="1542627972963" expanded="false" signature="545:550" ph="..." />
-            <marker date="1542627972963" expanded="false" signature="948:953" ph="..." />
-            <marker date="1542627972963" expanded="true" signature="2057:2118" ph="..." />
-            <marker date="1542627972963" expanded="false" signature="2145:2146" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/auth/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -295,13 +314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1542631035390" expanded="true" signature="101:106" ph="..." />
-            <marker date="1542631035390" expanded="true" signature="683:688" ph="..." />
-            <marker date="1542631035390" expanded="true" signature="809:810" ph="..." />
-            <marker date="1542631035390" expanded="true" signature="1295:1501" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -319,19 +331,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ecommerce/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="117" column="45" selection-start-line="117" selection-start-column="45" selection-end-line="117" selection-end-column="45" />
+        <state relative-caret-position="99">
+          <caret line="32" selection-start-line="32" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ecommerce/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1542627972963" expanded="false" signature="545:550" ph="..." />
+            <marker date="1542627972963" expanded="false" signature="948:953" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/templates/products/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/templates/products/product_list_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_cdn/media_root/products/download_2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/templates/products/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ecommerce/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="172">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
           <folding>
-            <element signature="e#643#675#0" expanded="true" />
+            <element signature="e#0#63#0" expanded="true" />
+            <marker date="1542723797626" expanded="true" signature="207:212" ph="..." />
+            <marker date="1542723797626" expanded="true" signature="535:540" ph="..." />
+            <marker date="1542723797626" expanded="true" signature="1636:1732" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/products/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1542723827516" expanded="true" signature="651:847" ph="..." />
+            <marker date="1542723827516" expanded="true" signature="690:847" ph="..." />
+            <marker date="1542723827516" expanded="true" signature="875:880" ph="..." />
           </folding>
         </state>
       </provider>
