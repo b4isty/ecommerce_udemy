@@ -5,9 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Product List</h3>
+
 {% for obj in object_list %}
-<p><a href="{{obj.get_absolute_url}}">{{obj.title}}</a></p>
+<p>{{obj.title}}</p>
 {% endfor %}
 </body>
 </html>

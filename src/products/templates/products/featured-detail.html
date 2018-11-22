@@ -1,11 +1,15 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
 <p>{{object.title}}</p>
 <p>{{object.description}}</p>
 {% if object.image %}
 <p><img class="img-fluid" src="{{object.image.url}}"></p>
-{% else %}
-<p><img src=""></p>
 {% endif %}
-{% endblock %}
+
+</body>
+</html>
