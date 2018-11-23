@@ -27,7 +27,9 @@ def contact_page(request):
     #     print(request.POST.get('fullname'))
     context = {"title": "Contact",
                "content": "Welcome here",
-               'form': form}
+               'form': form,
+               'contact': "Submit your contact info"
+               }
     return render(request, 'contact/view.html', context)
 
 

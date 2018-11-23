@@ -1,13 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 <h3>Product List</h3>
-{% for obj in object_list %}
-<p><a href="{{obj.get_absolute_url}}">{{obj.title}}</a></p>
+<div class="container">
+    <div class="row">
+        {% for obj in object_list %}
+        <div class="col">
+            {{forloop.counter}}
+            {% include "products/snippets/card.html" with instance=obj %}
+            {% if forloop.counter|divisibleby:3 %}
+        </div></div><div class="row"><div class="col-12"><hr/></div>
+    {% elif forloop.counter|divisibleby:2 %}
+     </div></div><div class="row"><div class="col-12"><hr/></div>
+    {% else %}
+</div>
+    {% endif %}
+    <!--{% cycle '<h1>hello</h1>' '' %}-->
 {% endfor %}
-</body>
-</html>
+</div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

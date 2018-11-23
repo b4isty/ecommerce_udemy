@@ -4,8 +4,8 @@ from .views import ProductListView, ProductDetailSlugView
     # product_list_view, product_detail_view, ProductDetailView, ProductFeaturedListView, ProductFeaturedDetailView
 
 urlpatterns = [
-    url(r'^$', ProductListView.as_view()),
-    url(r'^(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view()),
+    url(r'^$', ProductListView.as_view(), name='list'),
+    url(r'^(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view(), name='detail'),
 
     # url(r'^products-fbv/', product_list_view),
     # url(r'^product/(?P<pk>\d+)/$', ProductDetailView.as_view()),
