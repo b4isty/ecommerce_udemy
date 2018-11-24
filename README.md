@@ -1,2 +1,2 @@
 # ecommerce_udemy
-A eCommerce project practice from udemy course 
+A Django eCommerce project practice from udemy course 
