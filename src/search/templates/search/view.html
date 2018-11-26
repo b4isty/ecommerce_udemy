@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Product List</h3>
+
+<div class="row mb-3">
+    {% if query %}
+    <div class="col-12 mb-3">
+        Result for <b>{{query}}</b>
+    </div>
+    {% else %}
+    <div class="col-12 col-md-8 col-lg-6 mx-auto py-5">
+        <!--search form-->
+        {% include 'search/snippets/search-form.html' %}
+
+    </div>
+    {% endif %}
+    <div class="col-12">
+        <hr>
+    </div>
+</div>
+
+<div class="row">
+    {% for obj in object_list %}
+    <div class="col">
+        {% include "products/snippets/card.html" with instance=obj %}
+        {% if forloop.counter|divisibleby:3 %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr/>
+    </div>
+
+    {% else %}
+</div>
+{% endif %}
+<!--{% cycle '<h1>hello</h1>' '' %}-->
+{% endfor %}
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
