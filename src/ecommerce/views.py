@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 
 
 def home_page(request):
+    # print(request.session.get("first_name", "Unknown")) # get
+
     context = {"title": "Hello world", "content": "Welcome to home page"}
     if request.user.is_authenticated():
         context["premium_content"] = "You can shop now "
