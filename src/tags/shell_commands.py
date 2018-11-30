@@ -6,7 +6,7 @@
 from tags.models import Tag
 
 qs = Tag.objects.all()
-print(qs)
+# print(qs)
 black = Tag.objects.last()
 black.title
 black.slug
@@ -39,7 +39,7 @@ from products.models import Product
 
 
 qs = Product.objects.all()
-print(qs)
+# print(qs)
 tshirt = qs.first()
 tshirt.title
 tshirt.description
