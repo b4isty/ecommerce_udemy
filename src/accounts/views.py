@@ -15,16 +15,16 @@ def login_page(request):
         "form": form
     }
     next_ = request.GET.get('next')
+
     next_post = request.POST.get('next')
+    # print(next_post, next_)
     redirect_path = next_ or next_post or None
-    print(next_, next_post, redirect_path)
     if form.is_valid():
         username = form.cleaned_data.get("username")
         password = form.cleaned_data.get("password")
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            print(request.get_host())
             if is_safe_url(redirect_path, request.get_host()):
                 return redirect(redirect_path)
             else:
