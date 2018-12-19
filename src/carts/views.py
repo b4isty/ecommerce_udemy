@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import Cart, Product
 from orders.models import Order
-from accounts.forms import LoginForm
+from accounts.forms import LoginForm, GuestForm
 from billing.models import BillingProfile
+from accounts.models import GuestEmail
 
 
 def cart_home(request):
@@ -33,16 +34,46 @@ def checkout_home(request):
     order_obj = None
     if cart_created or cart_obj.products.count() == 0:
         return redirect("cart:home")
-    order_obj, new_order_obj = Order.objects.get_or_create(cart=cart_obj)
+    # order_obj, new_order_obj = Order.objects.get_or_create(cart=cart_obj)
     billing_profile = None
     login_form = LoginForm()
+    guest_form = GuestForm()
+    guest_email_id = request.session.get("guest_email_id")
     if request.user.is_authenticated():
         billing_profile, billing_profile_created = BillingProfile.objects.get_or_create(user=request.user,
                                                                                         email=request.user.email)
+    elif guest_email_id is not None:
+        guest_email_obj = GuestEmail.objects.get(id=guest_email_id)
+        billing_profile, billing_guest_profile_created = BillingProfile.objects.get_or_create(
+            email=guest_email_obj.email)
+    else:
+        pass
+
+    if billing_profile is not None:
+        order_qs = Order.objects.filter(billing_profile=billing_profile, cart=cart_obj, active=True)
+        if order_qs.count() == 1:
+            order_obj = order_qs.first()
+        else:
+            print("----------------", billing_profile, cart_obj)
+            old_order_qs = Order.objects.exclude(billing_profile=billing_profile).filter(cart=cart_obj)
+            print(old_order_qs)
+            if old_order_qs.exists():
+                old_order_qs.update(active=False)
+            order_obj = Order.objects.create(billing_profile=billing_profile, cart=cart_obj)
+            print("order_created", order_obj)
+
+    # if billing_profile is not None:
+    #     order_qs = Order.objects.filter(cart=cart_obj, active=True)
+    #     if order_qs.exists():
+    #         order_qs.update(active=False)
+    #     else:
+    #         order_obj = Order.objects.create(billing_profile=billing_profile, cart=cart_obj)
+
     context = {
         "object": order_obj,
         "billing_profile": billing_profile,
-        "login_form": login_form
+        "login_form": login_form,
+        "guest_form": guest_form
     }
 
     return render(request, "carts/checkout.html", context)
